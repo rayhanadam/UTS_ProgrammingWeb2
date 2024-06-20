@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
     }
   }
 
-  $sql = 'UPDATE adam_mahasiswa SET ';
+  $sql = 'UPDATE data_mahasiswa SET ';
   $sql .= "nama = '{$nama}', nim = '{$nim}', ";
   $sql .= "no_hp = '{$no_hp}', jurusan = '{$jurusan}', agama = '{$agama}',";
   $sql .= "tgl_lahir = '{$tgl_lahir}', tempat_lahir = '{$tempat_lahir}', jenis_kelamin = '{$jenis_kelamin}', ";
@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
   // header('location: index.php');
 }
 
-$sql = "SELECT * FROM adam_mahasiswa WHERE id='{$id}' ";
+$sql = "SELECT * FROM data_mahasiswa WHERE id='{$id}' ";
 $result = mysqli_query($conn, $sql);
 if (!$result) die("Error : Data tidak tersedia");
 $data = mysqli_fetch_array($result);

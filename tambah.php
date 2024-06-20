@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
     }
   }
 
-  $sql = 'INSERT INTO adam_mahasiswa (nim, nama, email, no_hp, tempat_lahir, tgl_lahir, jenis_kelamin, jurusan, agama, alamat,foto)';
+  $sql = 'INSERT INTO data_mahasiswa (nim, nama, email, no_hp, tempat_lahir, tgl_lahir, jenis_kelamin, jurusan, agama, alamat, foto)';
   $sql .= "VALUE ( '{$nim}','{$nama}', '{$email}', '{$no_hp}', '{$tempat_lahir}', '{$tgl_lahir}', '{$jenis_kelamin}', '{$jurusan}', '{$agama}', '{$alamat}', '{$foto}')";
 
   $result = mysqli_query($conn, $sql);

@@ -1,7 +1,7 @@
 <?php
 include("koneksi.php");
 
-$sql = 'SELECT * FROM adam_mahasiswa';
+$sql = 'SELECT * FROM data_mahasiswa';
 $result = mysqli_query($conn, $sql);
 
 ?>
@@ -21,7 +21,7 @@ $result = mysqli_query($conn, $sql);
   <div class="container mt-4">
     <div class="d-flex justify-content-between">
 
-      <h1>Data Mahasiswa Universitas Harvard Cabang Tambun</h1>
+      <h1>Data Mahasiswa Universitas Pelita Bangsa</h1>
       <a href="tambah.php" class="btn btn-primary mb-4">+ Tambah Mahasiswa</a>
     </div>
     <div class="main">
